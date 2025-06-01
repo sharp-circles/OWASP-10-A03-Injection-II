@@ -1,5 +1,5 @@
 # OWASP-10-A03-Injection-II
 
-Second lab for the OWASP.A03.Injection
+Second lab for the two deliveries series on the OWASP injection 
 
 Vulnerable and secure self-contained data access plugin layers built on top of a clean web application architecture written with .NET
