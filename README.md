@@ -1,6 +1,6 @@
 # OWASP-10-A03-Injection-II
 
-*** Repo under construction. Files will be uploaded during the following days ***
+***Repo under construction. Files will be uploaded during the following days***
 
 Second lab for the two deliveries series on the OWASP injection segment
 
