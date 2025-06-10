@@ -2,7 +2,9 @@
 
 Second lab for the two deliveries series on the OWASP injection segment
 
-The following lab provides a full web application scaffolding with a special separation at the data access layer, providing one secure implementation in contrast of a vulnerable one.
+### Structure
+
+The following lab provides a full web application scaffolding with a special separation at the data access layer, proposing one secure implementation in contrast of a vulnerable one.
 
 The main parts or layers are:
 
@@ -14,7 +16,7 @@ Clean architecture concepts have been applied to arrange the dependencies in the
 
 <img src="https://github.com/sharp-circles/OWASP-10-A03-Injection-II/blob/main/Diagrams/architecture-diagram.png" alt="Architecture diagram" />
 
-Attacks and payloads
+#### Attacks and payloads
 
 This lab is based on SQL injection, as mentioned. The main content is divided in two steps:
 
