@@ -1,7 +1,28 @@
 # OWASP-10-A03-Injection-II
 
-***Repo under construction. Files will be uploaded during the following days***
-
 Second lab for the two deliveries series on the OWASP injection segment
 
-Vulnerable and secure self-contained data access plugin layers built on top of a clean web application architecture written with .NET
+The following lab provides a full web application scaffolding with a special separation at the data access layer, providing one secure implementation in contrast of a vulnerable one.
+
+The main parts or layers are:
+
+1. API/Controllers
+2. Business interactors. The core policy
+3. The data access layer, divided in two
+
+Clean architecture concepts have been applied to arrange the dependencies in the most compliant way. This diagram explains the overview of the layout.
+
+<img src="https://github.com/sharp-circles/OWASP-10-A03-Injection-II/blob/main/Diagrams/architecture-diagram.png" alt="Architecture diagram" />
+
+Attacks and payloads
+
+This lab is based on SQL injection, as mentioned. The main content is divided in two steps:
+
+1. Regular injection. This one consists in the most classic SQL injection with alphanumeric output.
+2. Blind injection. This other one portraits a landscape a bit more challenging. The output in this case is **numeric**, so there's some translation to be done after the successful execution.
+
+The structure is divided in different folders for comprehension.
+
+For further understanding, you can take a look at the snapshots, as well as the article on the official site.
+
+Happy hacking.
