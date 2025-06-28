@@ -38,7 +38,12 @@ public class SQLiteRepository<T> : ISqLiteRepository<T> where T : Entity, new()
 
         var tableName = tableMapping.TableName;
 
-        var sqlStatement = $"{SqlStatements.SELECT_ALL_CLAUSE} {tableName} {SqlStatements.WHERE_CLAUSE} {property} {SqlStatements.EQUAL_CLAUSE} '{value}'";
+        var sqlStatement = SqlStatements.SELECT_ALL_CLAUSE + " " +
+                           tableName + " " +
+                           SqlStatements.WHERE_CLAUSE + " " +
+                           property + " " + 
+                           SqlStatements.EQUAL_CLAUSE + " '" +
+                           value + "'";
 
         var records = await _context.QueryAsync(tableMapping, sqlStatement);
 
